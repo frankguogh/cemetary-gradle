@@ -28,6 +28,11 @@ NOTE: This repository contains the guide documentation source. To view the guide
 
 Learn how to build and test a simple web application using Gradle and Open Liberty.
 
+== Instruction
+git clone https://github.com/frankguogh/cemetary-gradle.git
+cd cemetary-gradle/finish
+./gradlew libertyDev
+http://localhost:9080/GradleSample/servlet
 == What you'll learn
 
 You will learn how to build and test a simple web servlet application using the Gradle `war` 

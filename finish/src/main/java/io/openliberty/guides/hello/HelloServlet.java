@@ -57,12 +57,16 @@ public class HelloServlet extends HttpServlet {
             if (name != null && !name.isBlank()) {
                 deceasedList = dl.searchByName(name.trim());
                 dl = new DeceasedList(deceasedList);
+            } else {
+                name = "";
             }
 
             street = request.getParameter(PARAMETER_STREET);
             System.out.println("street=" + street);
             if (street != null && !street.isBlank()) {
                 deceasedList = dl.searchByStreet(street.trim());
+            } else {
+                street = "";
             }
         }
 
